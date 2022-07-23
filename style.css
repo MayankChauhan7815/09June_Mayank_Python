@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ 
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ###### utility classses ###################### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn{
+    background-color: rgb(240, 79, 79);
+    width: 115px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+/* ############### NEVBAR STYLING ################################ */
+
+/* for desktop mode */
+
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.logo{
+    order: 1;
+    font-size: 2rem;
+    color:  #117964;
+    text-transform: uppercase;
+}
+
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in;
+}
+
+.navbar a:hover{
+    color: #d53152;
+}
+
+
+/* ############# Show case Styling ################### */
+
+
+.showcase-area{
+    height: 100vh;
+    background:linear-gradient(rgba(57, 57, 57, 0.558), rgba(83, 79, 79, 0.547)), url("./img/1.jpg");
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50vh;
+}
+
+.showcase-container{
+    /* display: flex; */
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.8rem;
+    color: #c8d7d4;
+    vertical-align: 50px;
+    animation: mymove 5s infinite;
+}
+
+
+@keyframes mymove {
+    50% {vertical-align: 150px;}
+  }
